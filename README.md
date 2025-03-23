@@ -25,19 +25,24 @@ blockchain_project/
 │── private_key.pem      # Private key for encryption (DO NOT SHARE)
 │── public_key.pem       # Public key for decryption
 │── venv/                # Virtual environment (not included in repo)
+
 📦 Installation
+
 1️⃣ Clone the repository
 git clone 
 cd to the repo
+
 2️⃣ Set up a virtual environment
 python3 -m venv venv
 source venv/bin/activate   # On macOS/Linux
 venv\Scripts\activate      # On Windows
+
 3️⃣ Install dependencies
 pip install -r requirements.txt
 🚀 Running the Blockchain
 Start the Flask Server
 python app.py --host=0.0.0.0 --port=5000
+
 The API will be accessible at:
 👉 http://127.0.0.1:5000/ (Localhost)
 👉 http://YOUR_AWS_IP:5000/ (AWS Deployment)
@@ -60,11 +65,16 @@ curl -X POST http://127.0.0.1:5000/submit_data -H "Content-Type: application/jso
 1️⃣ Connect to EC2
 
 ssh -i "blockchain-key.pem" ubuntu@your-aws-ip
+
 2️⃣ Install Python & Dependencies
+
 sudo apt update
 sudo apt install python3 python3-pip python3-venv -y
+
 3️⃣ Run Flask Server
+
 source venv/bin/activate
 python app.py --host=0.0.0.0 --port=5000
+
 4️⃣ Update Security Rules
 ✔ Allow inbound traffic for Port 5000 in AWS Security Group.
