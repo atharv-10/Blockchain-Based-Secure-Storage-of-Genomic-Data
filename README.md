@@ -16,14 +16,23 @@ A secure blockchain-based system for storing genomic data using AES encryption a
 
 blockchain_project/
 │── blockchain.py        # Blockchain class for managing the chain
+
 │── app.py               # Flask API for data input & retrieval
+
 │── keygen.py            # AES key generation utility
+
 │── sign_transaction.py  # Digital signature implementation
+
 │── test_encrypt.py      # Testing AES encryption
+
 │── requirements.txt     # Required Python libraries
+
 │── README.md            # Project documentation
+
 │── private_key.pem      # Private key for encryption (DO NOT SHARE)
+
 │── public_key.pem       # Public key for decryption
+
 │── venv/                # Virtual environment (not included in repo)
 
 📦 Installation
